@@ -1,0 +1,7 @@
+getwd()
+crime <- read.csv("SacramentocrimeJanuary2006.csv", TRUE, ",")
+class(crime)
+head(crime)
+# hist(crime$district, main="Comitted crimes by district", ylab="Crimes", xlab="District")
+# plot(crime$latitude, crime$longitude, xlab="Latitude", ylab="Longitude")
+boxplot(crime$district)
