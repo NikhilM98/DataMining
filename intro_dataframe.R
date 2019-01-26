@@ -13,6 +13,15 @@ x[3]
 x$year
 x[4,3]
 x[4, 2:3]
+x[4, c(1,3)]
+x[4, c("id","bhawan")]
 x["year"]
 class(x["year"])
 class(x[,"year"])
+
+# factor is a categorical variable
+is.factor(x$bhawan)
+str(x)
+
+# dataframes are actually list 
+typeof(x)
